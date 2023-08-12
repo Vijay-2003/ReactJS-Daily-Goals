@@ -1,0 +1,90 @@
+body{
+    background-color: black;
+    color: black;
+    font-family: "Poppins",sans-serif;
+}
+
+#todoform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 1rem; 
+}
+#todoform input, textarea, #btninput{
+    width:30vmax;
+    border-radius: 0.4rem;
+    /* letter-spacing: 0.2px;
+    word-spacing: 0.3px;
+    font-weight: 600;
+    height: 30px; */
+}
+#btninput{
+    background-color: black;
+    color: white;
+}
+#heading{
+    background-color: blue;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-weight: bolder;
+}
+.container{
+    background-color: cornsilk;
+    min-height: 100vh;
+    max-width: 40vmax;
+    margin: auto;
+}
+#tasks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    border: black 0.1rem outset;
+    margin: auto;
+    margin-top: 2rem;
+    min-width: 20vmax;
+    border-radius: 0.3rem;
+}
+#description{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+}
+#deletebtn{
+    background-color: red;
+    color: white;
+    border-radius: 0.2rem;
+    font-weight: bold;
+}
+#btninput{
+    transition: all ease-in 0.2s;
+}
+#btninput:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-2px);
+}
+@media screen and (max-width:1000px){
+    .container{
+        max-width: 50vmax;
+    }
+    #tasks{
+        max-width: 45vmax;
+        gap: 10rem;
+        text-align: left;
+        padding: 0 2px;
+    }
+    #todoform input, textarea, #btninput{
+        width:40vmax;
+        border-radius: 0.4rem;
+
+    }
+}
+
